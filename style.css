@@ -1,0 +1,236 @@
+/*-------------------- CSS RESET ------------------------------------------ */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------------------- ROOT VARIABLES ------------------------------------- */
+html {
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ------------------- GLOBAL STYLES (mobile first/small) ------------------*/
+h1 {
+    font-size: 3em;
+    color: #007d7b;
+    padding: 8px;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    padding: 5px;
+}
+
+h1, h2, nav a, label, input {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #000000;
+    padding: 25px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav a {
+    font-size: 1.5em;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+}
+
+figcaption, label, input, small {
+    font-size: 1em;
+}
+
+small {
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.25em;
+    padding-top: 30px;
+}
+
+article p {
+    padding-bottom: 10px;
+}
+
+main, header {
+    background-color: #ffffff;
+    margin: 0 auto;
+    max-width: 95%;
+}
+
+main section, article, aside {
+    padding: 10px;
+}
+
+aside, footer {
+    color: #ffffff;
+    text-align: center;
+}
+
+form h2 {
+    visibility:hidden;
+    height:1px;
+}
+
+[href="#top"] {
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    border: 1px solid #ffffff;
+}
+
+form div {
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
+    padding-top: 20px;
+}
+
+aside p {
+    width: 80%;
+    margin: auto;
+}
+
+#submit {
+    margin: auto auto 50px;
+    width: 50%;
+    color: #ffffff;
+    background-color: #007d7b;
+    border-radius: 10px;
+}
+
+label {
+    display: flex;
+    justify-content: left;
+    padding-left: 10px;
+}
+
+input {
+    color: #007d7b;
+    padding: 5px;
+}
+
+.white {
+    color: #ffffff;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figcaption {
+    text-transform: uppercase;
+}
+
+.top {
+    position: relative;
+    bottom: 265px;
+}
+
+.top-tall {
+    position: relative;
+    bottom: 615px;
+}
+
+.bottom {
+    position: relative;
+    bottom: 30px;
+}
+
+/*-------------------- MEDIA QUERY (medium) --------------------------------*/
+@media screen and (min-width: 880px) {
+    article div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main, header {
+        max-width: 890px;
+    }
+
+    form div {
+        max-width: 700px;
+    }
+}
+
+/*-------------------- MEDIA QUERY (large) -------------------------------- */
+@media screen and (min-width: 1300px) {
+    article div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    main, header {
+        max-width: 1350px;
+    }
+
+    form div {
+        max-width: 1150px;
+    }
+
+    nav ul {
+        justify-content: right;
+    }
+}

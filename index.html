@@ -8,62 +8,124 @@
     </head>
 
     <body>
-        TK Photography
-        About
-        Gallery
-        Contact
-        top
-        About
-        Hello! 
-        I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world. 
-        Gallery
-        Here are some highlights of my work. The locations and year are in the caption. 
-        
-        Chile.png
-        Chile, 2001
-        
-        Guatemala.png
-        Guatemala, 1997
-        
-        Hawaii.png
-        Hawaii, 2010
-        
-        Iran.png
-        Iran, 1999
-        
-        Ireland.png
-        Ireland, 2012
-        
-        Italy.png
-        Italy, 2015
-        
-        Moab-Desert.png
-        Moab Desert, 2020
-        
-        Rocky-Mountains.png
-        Rocky Mountains, 2009
-        
-        Switzerland.png
-        Switzerland, 2014
-        
-        UK.png
-        UK, 2005
-        
-        USA.png
-        USA, 2021
-        
-        Wyoming.png
-        Wyoming, 2021
-        Contact
-        Please fill out this form and I’ll connect with you soon.
-        
-        Your contact information
-        Name (Your full name)
-        Email (Enter your email address)
-        Message (What can I help you with?)
-        Submit
-        
-        Copyright 2021 TK Photography
+        <header>
+            <h1 id="top">TK Photography</h1>
+        </header>
+
+        <main>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#top">top</a></li>
+                </ul>
+            </nav>
+
+            <section>
+                <h2 id="about">About</h2>
+                <p>Hello!</p> 
+                <p>I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world.</p>
+            </section>
+
+            <article>
+                <h2 id="gallery">Gallery</h2>
+                <p>Here are some highlights of my work. The locations and year are in the caption.</p> 
+                
+                <div>
+                    <figure>
+                        <img src="Chile.png" alt="Chile, 2001">
+                        <figcaption class="white bottom">Chile, 2001</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="Guatemala.png" alt="Guatemala, 1997">
+                        <figcaption class="white top">Guatemala, 1997</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="Hawaii.png" alt="Hawaii, 2010">
+                        <figcaption class="white bottom">Hawaii, 2010</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="Iran.png" alt="Iran, 1999">
+                        <figcaption class="top-tall">Iran, 1999</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="Ireland.png" alt="Ireland, 2012">
+                        <figcaption class="top-tall">Ireland, 2012</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="Italy.png" alt="Italy, 2015">
+                        <figcaption class="bottom">Italy, 2015</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="Moab-Desert.png" alt="Moab Desert, 2020">
+                        <figcaption class="white bottom">Moab Desert, 2020</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="Rocky-Mountains.png" alt="Rocky Mountains, 2009">
+                        <figcaption class="top">Rocky Mountains, 2009</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="Switzerland.png" alt="Switzerland, 2014">
+                        <figcaption class="top">Switzerland, 2014</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="UK.png" alt="UK, 2005">
+                        <figcaption class="top">UK, 2005</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="USA.png" alt="USA, 2021">
+                        <figcaption class="top">USA, 2021</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="Wyoming.png" alt="Wyoming, 2021">
+                        <figcaption class="white top">Wyoming, 2021</figcaption>
+                    </figure>
+                </div>
+            </article>
+        </main>
+
+        <aside>
+            <h2 id="contact">Contact</h2>
+            <p>Please fill out this form and I’ll connect with you soon.</p>
+            <form>
+                <h2>Your contact information</h2>
+
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" value="Your full name">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" value="Enter your email address">
+                </div>
+
+                <div>
+                    <label for="message">Message</label>
+                    <input type="text" name="message" id="message" value="What can I help you with?">
+                </div>
+
+                <div>
+                    <input type="submit" value="Submit" id="submit">
+                </div>
+            </form>
+        </aside>
+
+        <footer>
+            <small>Copyright 2021 TK Photography</small>
+        </footer>
     </body>
 </html>
 
